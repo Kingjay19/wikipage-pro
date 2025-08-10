@@ -20,7 +20,7 @@ const FAQs = () => {
         transition={{ ease: "easeInOut", duration: 1.25 }}
       >
         <SubHeading subheader="Frequently Asked Questions" />
-        <p className="py-2 text-xs text-center leading-6 md:text-sm lg:text-base">
+        <p className="py-2 text-center leading-6 text-sm lg:text-base">
           We Get It—Curiosity Leads to Success! Got questions? <br></br>That's a
           great sign. Here are some
         </p>
@@ -56,14 +56,14 @@ const FAQs = () => {
                     whileInView={{ y: 0, opacity: 1 }}
                     transition={{ ease: "easeInOut", duration: 1.0 }}
                   >
-                    <p className="my-2 py-4 text-gray-500 text-xs leading-6 border-t border-gray-300 transition-transform duration-300 md:text-sm">
+                    <p className="my-2 py-4 text-gray-500 leading-6 border-t border-gray-300 transition-transform duration-300 text-sm">
                       {faqQuestion.answer}
                     </p>
                   </motion.div>
                 )}
               </div>
             ))}
-            <div className="flex items-center gap-3 my-6 mx-4 font-semibold text-xs md:test-sm md:mx-12 ">
+            <div className="flex items-center gap-1 my-6 mx-4 font-semibold text-[13px] md:mx-12 md:gap-3 ">
               <p className="">Cant find what you need? </p>
               <Link
                 href="/"

@@ -11,7 +11,7 @@ export default function Achievement() {
     >
       <div className="text-center my-6">
         <SubHeading subheader="Achievements" />
-        <p className="py-2 text-xs text-center leading-6 md:text-sm lg:text-base">
+        <p className="py-2 text-center leading-6 text-sm lg:text-base">
           Curious about what we have accomplished? <br></br>Let our track
           records speak for itself
         </p>
@@ -30,7 +30,7 @@ export default function Achievement() {
               className="fill-current mx-auto py-2"
             />
             <h1 className="font-semibold py-2 text-xl">100+ Brands served</h1>
-            <p className="py-1 text-gray-500 text-xs md:text-sm lg:text-base">
+            <p className="py-1 text-gray-500 text-sm lg:text-base">
               Helping businesses accross various industries achieve their goals
             </p>
           </div>
@@ -50,7 +50,7 @@ export default function Achievement() {
             <h1 className="font-semibold py-2 text-xl">
               9 Years of Experience
             </h1>
-            <p className="py-1 text-gray-500 text-xs md:text-sm lg:text-base">
+            <p className="py-1 text-gray-500 text-sm lg:text-base">
               Bringing seasoned expertise to every project
             </p>
           </div>
@@ -70,7 +70,7 @@ export default function Achievement() {
             <h1 className="font-semibold py-2 text-xl">
               $100,000+ Saved for Brands
             </h1>
-            <p className="py-1 text-gray-500 text-xs md:text-sm lg:text-base">
+            <p className="py-1 text-gray-500 text-sm lg:text-base">
               so they can reinvest where it matters the most
             </p>
           </div>

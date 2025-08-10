@@ -36,7 +36,7 @@ export default function Navigation() {
                 <Link href="/">
                     <h1 className="text-2xl md:text-3xl">WikiPage Pro</h1>
                 </Link>
-                <div className="flex items-center gap-2 text-xs md:text-sm lg:text-base">
+                <div className="flex items-center gap-2 text-sm lg:text-base">
                     <Link href="/#services" scroll={true} className="hidden py-2 px-3 hover:border-black hover:border-b-2 hover:transition hover:duration-700 md:block">Our Works</Link>
                     <Link href="/about-us" className="hidden py-2 px-3 hover:border-black hover:border-b-2 md:block">About Us</Link>
                     <Link href="/" className="bg-blue-800 rounded-full py-3 px-4 text-white hover:bg-blue-900">Contact Us</Link>
@@ -56,7 +56,7 @@ export default function Navigation() {
             {isOpen && (
                 <div 
                     ref={menuRef}
-                    className='absolute right-5 bg-white text-gray-800 font-medium rounded-md shadow-md text-xs z-50'
+                    className='absolute right-5 bg-white text-gray-800 font-medium rounded-md shadow-md text-sm z-50'
                 >
                     <div className='grid rounded-lg divide-y divide-gray-200'>
                         <Link href="/#services" className='px-6 py-4 rounded-t-lg hover:bg-blue-50' onClick={() => setIsOpen(false)}>Our Works</Link>

@@ -6,7 +6,7 @@ const Testimonials = () => {
     <div className="bg-blue-50 m-6 rounded-4xl py-8 px-6 md:py-12 lg:py-16">
       <div className="text-center my-6">
         <SubHeading subheader="What our Clients say?" />
-        <p className="py-2 text-xs text-center leading-6 md:text-sm lg:text-base">
+        <p className="py-2 text-center leading-6 text-sm lg:text-base">
           Our track record speaks for itself. <br></br>This is what our previous
           customers have said.
         </p>
@@ -31,7 +31,7 @@ const Testimonials = () => {
               />
               <div>
                 <p className="font-semibold text-sm">{testimonial.name}</p>
-                <p className="text-xs italic text-gray-500">
+                <p className="text-sm italic text-gray-500">
                   {testimonial.title}
                 </p>
               </div>

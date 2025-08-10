@@ -9,9 +9,8 @@ const Services = () => {
     <div id="services" className="py-18 px-6">
       <div className="text-center my-6">
         <SubHeading subheader="Our Services" />
-        <p className="py-2 text-xs leading-6 md:text-sm lg:text-base">
-          Tailored solutions to elevate your brand, streamline operations,{" "}
-          <br></br>and drive measurable growth—backed by 9+ years of expertise.
+        <p className="py-2 leading-6 text-sm md:mx-32 lg:text-base lg:mx-56">
+          Tailored solutions to elevate your brand, streamline operations, and drive measurable growth—backed by 9+ years of expertise.
         </p>
       </div>
       <div className="mt-10 grid grid-cols-1 gap-6 md:grid-cols-3">
@@ -34,7 +33,7 @@ const Services = () => {
                 className="rounded-xl object-cover mb-4"
               />
               <h1 className="font-semibold py-2 text-xl">{service.title}</h1>
-              <p className="py-1 text-gray-500 text-xs md:text-sm">
+              <p className="py-1 text-gray-500 text-sm">
                 {service.description}
               </p>
             </motion.div>
@@ -49,7 +48,7 @@ export default Services;
 
 const services = [
   {
-    link: "/",
+    link: "/services/wikipedia",
     image: "/images/wikipedia.png",
     title: "Wikipedia Services",
     description:

@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 export default function Footer() {
   return (
-    <div className="mt-12 bg-blue-800 text-white px-6 py-18 text-xs lg:text-sm md:px-24">
+    <div className="mt-12 bg-blue-800 text-white px-6 py-18 text-sm md:px-24">
       <motion.div
         initial={{ y: 50, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
@@ -21,13 +21,13 @@ export default function Footer() {
               <p className="font-semibold text-sm py-1">
                 Stay Ahead with WikipagePro
               </p>
-              <p className="text-xs leading-6">
+              <p className="text-sm leading-6">
                 Get the latest insights, exclusive offers and business growth
                 tips delivered straight to your inbox
               </p>
 
               {/****************** Subscription Form ******************/}
-              <form className="text-xs my-4">
+              <form className="text-sm my-4">
                 <input
                   type="email"
                   placeholder="enter your email address"
@@ -67,7 +67,7 @@ export default function Footer() {
           <div className="col-span-2 md:col-span-1">
             <p className="text-sm font-semibold md:text-base">Our Services</p>
             <Link
-              href="/#services"
+              href="/services/wikipedia"
               className="py-1 flex items-center gap-2 hover:underline"
             >
               <Nebulas size="12" variant="Outline" className="fill-current" />
@@ -81,28 +81,28 @@ export default function Footer() {
               Website Development
             </Link>
             <Link
-              href="/#faqs"
+              href="/"
               className="py-1 flex items-center gap-2 hover:underline"
             >
               <Nebulas size="12" variant="Outline" className="fill-current" />
               Website Revamp
             </Link>
             <Link
-              href="/#achievements"
+              href="/"
               className="py-1 flex items-center gap-2 hover:underline"
             >
               <Nebulas size="12" variant="Outline" className="fill-current" />
               Wordpress Service
             </Link>
             <Link
-              href="/#achievements"
+              href="/"
               className="py-1 flex items-center gap-2 hover:underline"
             >
               <Nebulas size="12" variant="Outline" className="fill-current" />
               UI/UX Design
             </Link>
             <Link
-              href="/#achievements"
+              href="/"
               className="py-1 flex items-center gap-2 hover:underline"
             >
               <Nebulas size="12" variant="Outline" className="fill-current" />

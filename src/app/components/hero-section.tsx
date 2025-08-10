@@ -14,11 +14,11 @@ export default function HeroSection() {
 
             <div className="flex items-center justify-center gap-2">
                 <div className="p-1.5 bg-green-600 rounded-full"></div>
-                <p className="text-xs md:text-sm lg:text-base">Available for New Projects</p>
+                <p className="text-sm lg:text-base">Available for New Projects</p>
             </div>
             <Heading header="A dedicated team just for you" />
-            <p className="text-center text-xs md:text-sm lg:text-base">We don't just create, we solve your brand's <br></br>biggest challenges </p>
-            <div className="my-3 flex items-center justify-center font-semibold text-xs md:text-sm md:my-5 lg:text-base">
+            <p className="text-center text-sm lg:text-base">We don't just create, we solve your brand's <br></br>biggest challenges </p>
+            <div className="my-3 flex items-center justify-center font-semibold text-sm md:my-5 lg:text-base">
                 <Link href="/" className="w-fit bg-blue-800 rounded-full py-3 px-6 text-white hover:bg-blue-900">Contact Us</Link>
             </div>
         </motion.div>
