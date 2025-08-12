@@ -69,7 +69,7 @@ const services = [
       "Modernize outdated sites with improved UX, fresh designs, and performance upgrades to boost engagement.",
   },
   {
-    link: "/",
+    link: "/services/wordpress",
     image: "/images/wordpress.png",
     title: "Wordpress Service",
     description:
@@ -83,7 +83,7 @@ const services = [
       "Intuitive interfaces and seamless user journeys that increase retention and customer satisfaction.",
   },
   {
-    link: "/",
+    link: "/services/google-business",
     image: "/images/business-listing.png",
     title: "Google Business Listing Expert",
     description:

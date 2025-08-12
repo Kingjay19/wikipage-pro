@@ -88,7 +88,7 @@ export default function Footer() {
               Website Revamp
             </Link>
             <Link
-              href="/"
+              href="/services/wordpress"
               className="py-1 flex items-center gap-2 hover:underline"
             >
               <Nebulas size="12" variant="Outline" className="fill-current" />
@@ -102,7 +102,7 @@ export default function Footer() {
               UI/UX Design
             </Link>
             <Link
-              href="/"
+              href="/services/google-business"
               className="py-1 flex items-center gap-2 hover:underline"
             >
               <Nebulas size="12" variant="Outline" className="fill-current" />

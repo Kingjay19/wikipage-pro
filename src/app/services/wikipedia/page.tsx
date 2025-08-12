@@ -1,5 +1,5 @@
 import SubHeading from "@/app/components/sub-heading";
-import ServiceDescription from "./components/service-description";
+import ServiceDescription from "../../components/service-description";
 import WikipediaContent from "./components/wikipedia-content";
 import GetInTouch from "@/app/components/get-in-touch";
 
