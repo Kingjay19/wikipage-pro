@@ -3,6 +3,7 @@ import Image from "next/image";
 import SubHeading from "./sub-heading";
 import Link from "next/link";
 import { motion } from "framer-motion";
+import { ArrowRight } from "iconsax-reactjs";
 
 const Services = () => {
   return (
@@ -36,6 +37,12 @@ const Services = () => {
               <p className="py-1 text-gray-500 text-sm">
                 {service.description}
               </p>
+              <div className="bg-blue-800 text-white ml-auto mt-4 flex items-center gap-2 w-fit px-3 py-2 rounded-2xl transition-all duration-400 hover:scale-103">
+                <p className="text-xs">
+                See More
+              </p>
+              <ArrowRight variant="Outline" size="16" className="fill-current"/>
+              </div>
             </motion.div>
           </Link>
         ))}
