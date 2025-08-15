@@ -66,7 +66,7 @@ const FAQs = () => {
             <div className="flex items-center gap-1 my-6 mx-4 font-semibold text-[13px] md:mx-12 md:gap-3 ">
               <p className="">Cant find what you need? </p>
               <Link
-                href="/"
+                href="/contact"
                 className="flex items-center gap-2 text-blue-800 border-b border-white hover:border-blue-900 hover:text-blue-900"
               >
                 Send us a Message
