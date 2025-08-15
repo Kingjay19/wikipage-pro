@@ -19,7 +19,7 @@ export default function HeroSection() {
             <Heading header="A dedicated team just for you" />
             <p className="text-center text-sm lg:text-base">We don't just create, we solve your brand's <br></br>biggest challenges </p>
             <div className="my-3 flex items-center justify-center font-semibold text-sm md:my-5 lg:text-base">
-                <Link href="/" className="w-fit bg-blue-800 rounded-full py-3 px-6 text-white hover:bg-blue-900">Contact Us</Link>
+                <Link href="/contact" className="w-fit bg-blue-600 rounded-full py-3 px-6 text-white hover:bg-blue-700">Contact Us</Link>
             </div>
         </motion.div>
         </div>

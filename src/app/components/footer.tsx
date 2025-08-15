@@ -74,14 +74,14 @@ export default function Footer() {
               Wikipedia Services
             </Link>
             <Link
-              href="/"
+              href="/services/website-development"
               className="py-1 flex items-center gap-2 hover:underline"
             >
               <Nebulas size="12" variant="Outline" className="fill-current" />
               Website Development
             </Link>
             <Link
-              href="/"
+              href="/services/web-revamp"
               className="py-1 flex items-center gap-2 hover:underline"
             >
               <Nebulas size="12" variant="Outline" className="fill-current" />
@@ -95,7 +95,7 @@ export default function Footer() {
               Wordpress Service
             </Link>
             <Link
-              href="/"
+              href="/services/uiux-design"
               className="py-1 flex items-center gap-2 hover:underline"
             >
               <Nebulas size="12" variant="Outline" className="fill-current" />

@@ -37,11 +37,11 @@ const Services = () => {
               <p className="py-1 text-gray-500 text-sm">
                 {service.description}
               </p>
-              <div className="bg-blue-800 text-white ml-auto mt-4 flex items-center gap-2 w-fit px-3 py-2 rounded-2xl transition-all duration-400 hover:scale-103">
+              <div className="bg-blue-800 text-white ml-auto mt-4 flex items-center gap-2 w-fit px-3 py-2 rounded-2xl transition-all duration-400 hover:scale-103 hover:bg-blue-950">
                 <p className="text-xs">
-                See More
-              </p>
-              <ArrowRight variant="Outline" size="16" className="fill-current"/>
+                  See More
+                </p>
+                <ArrowRight variant="Outline" size="16" className="fill-current" />
               </div>
             </motion.div>
           </Link>
@@ -62,14 +62,14 @@ const services = [
       "Expertly crafted, compliant Wikipedia pages to establish your brand’s credibility and visibility with neutral, well-sourced content",
   },
   {
-    link: "/",
+    link: "/services/website-development",
     image: "/images/website-services.png",
     title: "Website Development",
     description:
       "Custom, responsive websites built for speed, SEO, and conversions—tailored to your business goals.",
   },
   {
-    link: "/",
+    link: "/services/web-revamp",
     image: "/images/website-revamp.png",
     title: "Website Revamp",
     description:
@@ -83,7 +83,7 @@ const services = [
       "Secure, scalable WordPress solutions—from blogs to e-commerce—with easy content management.",
   },
   {
-    link: "/",
+    link: "/services/uiux-design",
     image: "/images/uiux-sample.png",
     title: "UI/UX Design",
     description:

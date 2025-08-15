@@ -37,9 +37,9 @@ export default function Navigation() {
                     <h1 className="text-2xl md:text-3xl">WikiPage Pro</h1>
                 </Link>
                 <div className="flex items-center gap-2 text-sm lg:text-base">
-                    <Link href="/#services" scroll={true} className="hidden py-2 px-3 hover:border-black hover:border-b-2 hover:transition hover:duration-700 md:block">Our Works</Link>
-                    <Link href="/about-us" className="hidden py-2 px-3 hover:border-black hover:border-b-2 md:block">About Us</Link>
-                    <Link href="/" className="bg-blue-800 rounded-full py-3 px-4 text-white hover:bg-blue-900">Contact Us</Link>
+                    <Link href="/#services" scroll={true} className="hidden py-2 px-3 hover:border-blue-600 hover:border-b-2 hover:transition hover:duration-300 md:block">Our Works</Link>
+                    <Link href="/about-us" className="hidden py-2 px-3 hover:border-blue-600 hover:border-b-2 hover:transition hover:duration-300 md:block">About Us</Link>
+                    <Link href="/contact" className="bg-blue-600 rounded-full py-3 px-4 text-white hover:bg-blue-700">Contact Us</Link>
                     <div 
                         ref={buttonRef}
                         onClick={toggleMenu} 
