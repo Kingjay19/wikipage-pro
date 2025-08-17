@@ -1,49 +1,96 @@
 "use client";
+import { motion } from "framer-motion";
+import { useRef, useEffect, useState } from "react";
 import SubHeading from "./sub-heading";
 
 const Testimonials = () => {
+  const [width, setWidth] = useState(0);
+  const [isDragging, setIsDragging] = useState(false);
+  const [autoplayKey, setAutoplayKey] = useState(0);
+  const carousel = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (carousel.current) {
+      setWidth(carousel.current.scrollWidth - carousel.current.offsetWidth);
+    }
+  }, []);
+
+  const handleDragEnd = () => {
+    setIsDragging(false);
+    setAutoplayKey((prev) => prev + 1);
+  };
+
   return (
-    <div className="bg-blue-50 m-6 rounded-4xl py-8 px-6 md:py-12 lg:py-16">
+    <div
+      className="bg-blue-50 m-6 rounded-4xl py-8 px-6 md:py-12 lg:py-16"
+      onClick={() => {
+        if (!isDragging) {
+          setAutoplayKey((prev) => prev + 1);
+        }
+      }}
+    >
       <div className="text-center my-6">
         <SubHeading subheader="What our Clients say?" />
         <p className="py-2 text-center leading-6 text-sm lg:text-base">
-          Our track record speaks for itself. <br></br>This is what our previous
+          Our track record speaks for itself. <br />This is what our previous
           customers have said.
         </p>
       </div>
-      <div className="flex overflow-x-auto snap-x snap-mandatory no-scrollbar gap-4">
-        {testimonials.map((testimonial, index) => (
-          <div
-            key={index}
-            className="flex-shrink-0 w-80 snap-start my-1 p-6 bg-white rounded-md shadow-lg md:pt-8"
-          >
-            <p className="text-gray-600 mb-6 leading-6 font-bold text-3xl">
-              "
-              <span className="font-medium leading- italic text-sm">
-                {testimonial.text}"
-              </span>
-            </p>
-            <div className="flex items-center gap-4">
-              <img
-                src={testimonial.avatar}
-                alt={testimonial.name}
-                className="size-12"
-              />
-              <div>
-                <p className="font-semibold text-sm">{testimonial.name}</p>
-                <p className="text-sm italic text-gray-500">
-                  {testimonial.title}
-                </p>
+
+      {/* Carousel */}
+      <motion.div
+        ref={carousel}
+        className="overflow-hidden cursor-grab active:cursor-grabbing"
+      >
+        <motion.div
+          key={autoplayKey}
+          drag="x"
+          dragConstraints={{ right: 0, left: -width }}
+          className="flex gap-4"
+          animate={isDragging ? undefined : { x: [0, -width] }}
+          transition={
+            isDragging
+              ? undefined
+              : { ease: "linear", duration: 30, repeat: Infinity }
+          }
+          onDragStart={() => setIsDragging(true)}
+          onDragEnd={handleDragEnd}
+        >
+          {testimonials.concat(testimonials).map((testimonial, index) => (
+            <motion.div
+              key={index}
+              className="flex-shrink-0 w-80 my-1 p-6 bg-white rounded-md shadow-lg md:pt-8"
+              whileTap={{ scale: 0.95 }}
+            >
+              <p className="text-gray-600 mb-6 leading-6 font-bold text-3xl">
+                "
+                <span className="font-medium italic text-sm">
+                  {testimonial.text}"
+                </span>
+              </p>
+              <div className="flex items-center gap-4">
+                <img
+                  src={testimonial.avatar}
+                  alt={testimonial.name}
+                  className="size-12"
+                />
+                <div>
+                  <p className="font-semibold text-sm">{testimonial.name}</p>
+                  <p className="text-sm italic text-gray-500">
+                    {testimonial.title}
+                  </p>
+                </div>
               </div>
-            </div>
-          </div>
-        ))}
-      </div>
+            </motion.div>
+          ))}
+        </motion.div>
+      </motion.div>
     </div>
   );
 };
 
 export default Testimonials;
+
 
 const testimonials = [
   {

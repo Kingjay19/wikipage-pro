@@ -137,19 +137,23 @@ const UIDesignPage = () => {
 
                         <div className="bg-pink-50 rounded-xl p-6 border border-pink-100">
                             <h4 className="font-bold text-lg mb-3">UI Design Elements</h4>
-                            <div className="grid grid-cols-2 gap-3">
+                            <div className="grid gap-3 md:grid-cols-2">
                                 {[
                                     "Color systems",
                                     "Typography",
                                     "Iconography",
-                                    "Microinteractions",
-                                    "Animations",
                                     "Illustrations",
+                                    "Animations",
+                                    "Microinteractions",
                                     "Data visualization",
                                     "Accessibility"
                                 ].map((element, i) => (
-                                    <div key={i} className="flex items-start">
-                                        <span className="text-pink-500 mr-2 mt-1">•</span>
+                                    <div key={i} className="flex items-start gap-3 text-sm lg:text-base">
+                                        <Nebulas
+                                            size="12"
+                                            variant="Outline"
+                                            className="fill-current text-blue-900 my-1"
+                                        />
                                         <span>{element}</span>
                                     </div>
                                 ))}

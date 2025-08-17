@@ -137,7 +137,7 @@ const WebsiteRevamp = () => {
 
                         <div className="bg-blue-50 rounded-xl p-6 border border-blue-100">
                             <h4 className="font-bold text-lg mb-3">Optimization Areas</h4>
-                            <div className="grid grid-cols-2 gap-3">
+                            <div className="grid gap-3 md:grid-cols-2">
                                 {[
                                     "Image compression",
                                     "Code minification",
@@ -148,8 +148,12 @@ const WebsiteRevamp = () => {
                                     "Critical CSS",
                                     "Render-blocking fixes"
                                 ].map((feature, i) => (
-                                    <div key={i} className="flex items-start">
-                                        <span className="text-blue-500 mr-2 mt-1">•</span>
+                                    <div key={i} className="flex items-start text-sm lg:text-base">
+                                        <Nebulas
+                                            size="12"
+                                            variant="Outline"
+                                            className="fill-current text-blue-900 my-1 mr-2"
+                                        />
                                         <span>{feature}</span>
                                     </div>
                                 ))}
@@ -255,9 +259,9 @@ const WebsiteRevamp = () => {
                                 "Reduced support queries",
                                 "Enhanced social sharing"
                             ].map((benefit, i) => (
-                                <div key={i} className="flex items-center p-3 gap-3 bg-gray-50 rounded-lg text-base">
+                                <div key={i} className="flex items-center p-3 gap-3 bg-gray-50 rounded-lg text-sm lg:text-base">
                                     <Nebulas
-                                        size="16"
+                                        size="12"
                                         variant="Outline"
                                         className="fill-current text-blue-900 my-1"
                                     />

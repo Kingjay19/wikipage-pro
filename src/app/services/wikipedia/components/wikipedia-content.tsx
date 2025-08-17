@@ -298,12 +298,12 @@ const WikipediaContent = () => {
 
   return (
     <div className="max-w-4xl mx-auto p-6">
-      <div className="flex flex-wrap gap-2 my-6">
+      <div className="flex flex-wrap justify-center gap-2 my-6">
         {tabs.map((tab) => (
           <button
             key={tab.id}
             onClick={() => setActiveTab(tab.id)}
-            className={`flex items-center gap-2 px-5 py-3 rounded-lg font-medium transition-all duration-200 text-sm md:text-base ${
+            className={`flex items-center gap-2 px-5 py-3 rounded-lg font-medium transition-all duration-200 text-sm ${
               activeTab === tab.id
                 ? "bg-blue-600 text-white shadow-md"
                 : "bg-gray-100 text-gray-700 hover:bg-gray-200"

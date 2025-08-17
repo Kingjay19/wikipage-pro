@@ -3,6 +3,7 @@ import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import SubHeading from '@/app/components/sub-heading';
 import GetInTouch from '@/app/components/get-in-touch';
+import { Nebulas } from 'iconsax-reactjs';
 
 const WebsiteDevelopment = () => {
     const [activeTab, setActiveTab] = useState(0);
@@ -44,11 +45,11 @@ const WebsiteDevelopment = () => {
                             <div className="space-y-4">
                                 <div>
                                     <h5 className="font-medium mb-1">Frontend</h5>
-                                    <p className="text-sm text-gray-600">React, Next.js, TypeScript, Tailwind CSS</p>
+                                    <p className="text-sm text-gray-600">React, Next.js, TypeScript, Tailwind CSS, JavaScript</p>
                                 </div>
                                 <div>
                                     <h5 className="font-medium mb-1">Backend</h5>
-                                    <p className="text-sm text-gray-600">Node.js, Express, Firebase</p>
+                                    <p className="text-sm text-gray-600">Node.js, Express, Firebase, PHP, Laravel</p>
                                 </div>
                                 <div>
                                     <h5 className="font-medium mb-1">Hosting</h5>
@@ -136,7 +137,7 @@ const WebsiteDevelopment = () => {
 
                         <div className="bg-green-50 rounded-xl p-6 border border-green-100">
                             <h4 className="font-bold text-lg mb-3">Key Features</h4>
-                            <div className="grid grid-cols-2 gap-3">
+                            <div className="grid md:grid-cols-2 gap-3">
                                 {[
                                     "Product configurators",
                                     "Subscription models",
@@ -147,9 +148,13 @@ const WebsiteDevelopment = () => {
                                     "Payment gateways",
                                     "Shipping integration"
                                 ].map((feature, i) => (
-                                    <div key={i} className="flex items-start">
-                                        <span className="text-green-500 mr-2 mt-1">•</span>
-                                        <span>{feature}</span>
+                                    <div key={i} className="flex items-start gap-3">
+                                        <Nebulas
+                                            size="12"
+                                            variant="Outline"
+                                            className="fill-current text-blue-900 my-1"
+                                        />
+                                        <span className='text-sm lg:text-base'>{feature}</span>
                                     </div>
                                 ))}
                             </div>
@@ -254,8 +259,12 @@ const WebsiteDevelopment = () => {
                                 "Collaboration Tools",
                                 "Custom APIs"
                             ].map((type, i) => (
-                                <div key={i} className="flex items-center p-3 bg-gray-50 rounded-lg">
-                                    <span className="text-purple-500 mr-2">•</span>
+                                <div key={i} className="flex items-start p-3 gap-3 bg-gray-50 rounded-lg text-sm lg:text-base">
+                                    <Nebulas
+                                        size="12"
+                                        variant="Outline"
+                                        className="fill-current text-blue-900 my-1"
+                                    />
                                     <span>{type}</span>
                                 </div>
                             ))}
@@ -284,8 +293,8 @@ const WebsiteDevelopment = () => {
                             key={tab.id}
                             onClick={() => setActiveTab(tab.id)}
                             className={`m-1 px-6 py-3 rounded-lg font-medium text-base transition-all duration-200 ${activeTab === tab.id
-                                    ? 'bg-blue-600 text-white shadow-lg'
-                                    : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
+                                ? 'bg-blue-600 text-white shadow-lg'
+                                : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
                                 }`}
                         >
                             {tab.title}
