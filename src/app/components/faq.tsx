@@ -63,7 +63,7 @@ const FAQs = () => {
                 )}
               </div>
             ))}
-            <div className="flex items-center gap-1 my-6 mx-4 font-semibold text-[13px] md:mx-12 md:gap-3 ">
+            <div className="flex items-center gap-1 my-6 mx-4 font-semibold text-[14px] md:mx-12 md:gap-3 ">
               <p className="">Cant find what you need? </p>
               <Link
                 href="/contact"
@@ -96,7 +96,7 @@ const questions = [
   {
     question: "How fast can my project be done?",
     answer:
-      "For most requests, you can expect your project to be done within 48 hours. The turnaround time may vary depending on the complexity of the project. Larger or more detailed projects may take a bit longer, but we always prioritize clear communication and timely updates to keep you informed of progress.",
+      "Project timelines typically vary, as the exact turnaround depends on the complexity of the task. More detailed or extensive projects may require additional time, but I always ensure clear communication and regular updates so you’re informed at every stage.",
   },
   {
     question: "What if I'm not satisfied with what is done?",
@@ -104,13 +104,23 @@ const questions = [
       "Your satisfaction is our priority. If you’re not happy with what was done, you can request revisions, and we’ll make the necessary adjustments based on your feedback. We work collaboratively with you, refining your project until it aligns with your vision and meets your expectations. Our process includes multiple rounds of revisions to ensure you’re completely satisfied with the final outcome.",
   },
   {
-    question: "How fast can my project be done?",
+    question: "Can I trust that my page won’t be taken down after publishing?",
     answer:
-      "For most requests, you can expect your project to be done within 48 hours. The turnaround time may vary depending on the complexity of the project. Larger or more detailed projects may take a bit longer, but we always prioritize clear communication and timely updates to keep you informed of progress.",
+      "While no one can guarantee permanent placement on Wikipedia, we maximize approval chances by adhering to Wikipedia’s rules, avoiding promotional language, and using reliable references. We also provide support if edits or revisions are required later.",
   },
   {
-    question: "How fast can my project be done?",
+    question: "Will my personal or business information remain confidential?",
     answer:
-      "For most requests, you can expect your project to be done within 48 hours. The turnaround time may vary depending on the complexity of the project. Larger or more detailed projects may take a bit longer, but we always prioritize clear communication and timely updates to keep you informed of progress.",
+      "Yes. All information shared with us is treated with strict confidentiality and used solely for project purposes. Your privacy and trust are a top priority.",
+  },
+  {
+    question: "How clear will the process be for me as a client?",
+    answer:
+      "We provide a step-by-step overview at the start, with clear timelines, deliverables, and communication updates at every stage so you’re never left in the dark.",
+  },
+  {
+    question: "How do you ensure the information you use is accurate?",
+    answer:
+      "We only use publicly available, independent, and reputable sources. Every fact included is carefully cross-checked to maintain accuracy and transparency.",
   },
 ];

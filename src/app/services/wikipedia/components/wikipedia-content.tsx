@@ -272,9 +272,11 @@ const WikipediaContent = () => {
       content: (
         <div className="flex flex-col md:flex-row gap-6">
           <p className="text-sm leading-7 md:text-base">
-            Not sure if you or your brand qualifies for a Wikipedia article? We
-            evaluate your credentials based on Wikipedia’s notability criteria
-            and provide honest, actionable feedback.
+            Not sure if you or your brand qualifies for a Wikipedia article? Our Wikipedia notability experts conduct
+            an evaluation that covers everything from online visibility and public reputation to references. We review trusted 
+            independent sources, media mentions, and press releases to assess your standing in the online world. With out experts 
+            by your side, you don't just get a surface level inspection, we deliver a detailed report that highlights your strengths
+            and gaps. Have clarity of your notability before starting.
           </p>
         </div>
       ),
