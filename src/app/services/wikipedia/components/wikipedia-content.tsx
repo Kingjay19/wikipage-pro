@@ -434,7 +434,18 @@ const WikipediaContent = () => {
                   id="references"
                   name="references"
                   className="w-full px-4 py-3 rounded-lg text-sm border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
-                  required
+                />
+              </div>
+
+              <div>
+                <label htmlFor="doc-img-upload" className="block text-sm text-gray-700 mb-1"> Or You Can Upload Available Info and Reference Documents</label>
+                <input
+                  type="file"
+                  id="doc-img-upload"
+                  name="file"
+                  multiple
+                  accept=".doc, .docx, .pdf, image/jpeg, image/jpg, image/png"
+                  className="w-full px-4 py-3 rounded-lg text-xs border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
                 />
               </div>
 
