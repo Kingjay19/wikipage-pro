@@ -2,6 +2,7 @@
 import { motion } from 'framer-motion';
 import { Send } from 'iconsax-reactjs';
 import Image from 'next/image';
+import ContactForm from '../components/contact-form';
 
 const ContactPage = () => {
   return (
@@ -79,6 +80,7 @@ const ContactPage = () => {
             className="bg-white p-8 rounded-xl shadow-sm border border-gray-200"
           >
             <h2 className="text-xl font-bold text-gray-900 mb-6">Send Us a Message</h2>
+            {/* <ContactForm /> */}
             <form className="space-y-6" action="https://formsubmit.co/contact@wikipagepro.com" method="POST">
               <div>
                 <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">Name</label>
@@ -138,7 +140,7 @@ const ContactPage = () => {
                 <Send size={20} className="mr-2" variant="Bold" />
                 Send Message
               </button>
-            </form>
+            </form> 
           </motion.div>
         </div>
       </div>

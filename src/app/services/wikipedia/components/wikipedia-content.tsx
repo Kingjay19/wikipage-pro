@@ -3,6 +3,7 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Additem, ArrowRight3, Book, Lock, Nebulas, PasswordCheck, Refresh2, Send, Trash } from "iconsax-reactjs";
 import Link from "next/link";
+import WikipediaForm from "@/app/components/wikipedia-form";
 
 const WikipediaContent = () => {
   const [activeTab, setActiveTab] = useState(0);
@@ -369,7 +370,7 @@ const WikipediaContent = () => {
 
           <div className="bg-blue-50 space-y-4 p-4 rounded-lg border border-blue-100">
             <h2 className="text-xl font-bold text-gray-900 mb-6">Notability Assessment Form</h2>
-            <form className="space-y-6" action="https://formsubmit.co/contact@wikipagepro.com" method="POST">
+            <form className="space-y-6" action="https://formsubmit.co/contact@wikipagepro.com" method="POST" encType="multipart/form-data">
               <div>
                 <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">Full Name</label>
                 <input
@@ -457,12 +458,13 @@ const WikipediaContent = () => {
                 Submit
               </button>
             </form>
-              <button
-                className="w-full my-2 bg-white hover:bg-gray-100 border border-blue-300 text-blue-700 cursor-pointer font-medium py-3 px-6 rounded-lg shadow-md transition-colors duration-200 flex items-center justify-center"
-              >
-                <Lock size={20} className="mr-2" variant="Bold" />
-                Pay $100 Now to Begin Assessment
-              </button>
+            {/* <WikipediaForm /> */}
+            <button
+              className="w-full my-2 bg-white hover:bg-gray-100 border border-blue-300 text-blue-700 cursor-pointer font-medium py-3 px-6 rounded-lg shadow-md transition-colors duration-200 flex items-center justify-center"
+            >
+              <Lock size={20} className="mr-2" variant="Bold" />
+              Pay $100 Now to Begin Assessment
+            </button>
           </div>
         </div>
       ),
