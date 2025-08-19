@@ -1,7 +1,8 @@
 "use client";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Additem, Book, Nebulas, Refresh2, Trash } from "iconsax-reactjs";
+import { Additem, ArrowRight3, Book, Nebulas, PasswordCheck, Refresh2, Send, Trash } from "iconsax-reactjs";
+import Link from "next/link";
 
 const WikipediaContent = () => {
   const [activeTab, setActiveTab] = useState(0);
@@ -273,8 +274,8 @@ const WikipediaContent = () => {
         <div className="flex flex-col md:flex-row gap-6">
           <p className="text-sm leading-7 md:text-base">
             Not sure if you or your brand qualifies for a Wikipedia article? Our Wikipedia notability experts conduct
-            an evaluation that covers everything from online visibility and public reputation to references. We review trusted 
-            independent sources, media mentions, and press releases to assess your standing in the online world. With out experts 
+            an evaluation that covers everything from online visibility and public reputation to references. We review trusted
+            independent sources, media mentions, and press releases to assess your standing in the online world. With out experts
             by your side, you don't just get a surface level inspection, we deliver a detailed report that highlights your strengths
             and gaps. Have clarity of your notability before starting.
           </p>
@@ -283,6 +284,174 @@ const WikipediaContent = () => {
     },
     {
       id: 3,
+      icon: <PasswordCheck size="18" variant="Outline" className="fill-current" />,
+      title: "Notability Assessment",
+      content: (
+        <div className="space-y-4">
+          <h3 className="text-base font-bold text-blue-600 md:text-xl">
+            Wikipedia Page Notability Assessment
+          </h3>
+          <p className="leading-6 text-sm lg:text-base lg:leading-7">
+            A preliminary analysis to determine the likelihood of successfully creating a Wiki page.
+          </p>
+          <p className="leading-6 text-sm lg:text-base lg:leading-7">
+            What’s Included:
+          </p>
+          <ul className="text-sm leading-6 lg:text-base">
+            <li className="flex items-start gap-2 my-1">
+              <Nebulas
+                size="16"
+                variant="Outline"
+                className="fill-current text-blue-900 my-1"
+              />
+              <p>In-depth analysis of your subject’s notability status  </p>
+            </li>
+            <li className="flex items-start gap-2 my-1">
+              <Nebulas
+                size="16"
+                variant="Outline"
+                className="fill-current text-blue-900 my-1"
+              />
+              <p>Comprehensive review of existing online presence and reliable sources</p>
+            </li>
+            <li className="flex items-start gap-2 my-1">
+              <Nebulas
+                size="16"
+                variant="Outline"
+                className="fill-current text-blue-900 my-1"
+              />
+              <p>If chances are high: Highlights of your strengths and eligibility </p>
+            </li>
+            <li className="flex items-start gap-2 my-1">
+              <Nebulas
+                size="16"
+                variant="Outline"
+                className="fill-current text-blue-900 my-1"
+              />
+              <p>If chances are low: Actionable feedback and a roadmap for improvement</p>
+            </li>
+            <li className="flex items-start gap-2 my-1">
+              <Nebulas
+                size="16"
+                variant="Outline"
+                className="fill-current text-blue-900 my-1"
+              />
+              <p>A one-page report detailing the assessment’s findings.</p>
+            </li>
+          </ul>
+
+          <p className="leading-6 text-sm lg:text-base lg:leading-7">
+            The cost of this assessment package is a <strong>non-refundable fee of $100.</strong> However, if your topic receives
+            a high score in the assessment and you choose to proceed with our Wiki page creation service, the <strong>$100 </strong>
+            will be <strong>credited towards the total cost</strong> of the full wiki page creation.
+          </p>
+          <hr className="text-gray-300"></hr>
+
+          <p className="leading-6 text-sm lg:text-base lg:leading-7">
+            Please complete the form below with accurate details about yourself or the subject you'd like assessed.
+          </p>
+          <p className="flex gap-1 flex-wrap leading-6 text-sm md:flex-nowrap lg:text-base lg:leading-7">
+            If you encounter any issue or have questions,
+            <Link
+              href="/contact"
+              className="flex items-center gap-1 font-semibold text-blue-800 border-b border-white hover:border-blue-900 hover:text-blue-900"
+            >
+              please send us a message
+              <ArrowRight3
+                size={12}
+                color="ff0000"
+                variant="Broken"
+                className="fill-current md:size-4"
+              />
+            </Link>
+          </p>
+
+
+          <div className="bg-blue-50 space-y-4 p-4 rounded-lg border border-blue-100">
+            <h2 className="text-xl font-bold text-gray-900 mb-6">Notability Assessment Form</h2>
+            <form className="space-y-6" action="https://formsubmit.co/contact@wikipagepro.com" method="POST">
+              <div>
+                <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">Full Name</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  className="w-full px-4 py-3 rounded-lg text-sm border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                  placeholder="Your name"
+                  required
+                />
+              </div>
+
+              <div>
+                <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  className="w-full px-4 py-3 rounded-lg text-sm border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                  placeholder="your@email.com"
+                  required
+                />
+              </div>
+
+              <div>
+                <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-1">Phone Number</label>
+                <input
+                  type="number"
+                  id="phone"
+                  name="phone"
+                  className="w-full px-4 py-3 rounded-lg text-sm border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                  placeholder="+123 456 7890"
+                />
+              </div>
+
+              <div>
+                <label htmlFor="topic" className="block text-sm font-medium text-gray-700 mb-1">State the topic for the  Required Wikipedia page</label>
+                <input
+                  type="text"
+                  id="topic"
+                  name="topic"
+                  className="w-full px-4 py-3 rounded-lg text-sm border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                  required
+                />
+              </div>
+
+              <div>
+                <label htmlFor="info" className="block text-sm font-medium text-gray-700 mb-1"> Available Info about the topic</label>
+                <input
+                  type="text"
+                  id="info"
+                  name="info"
+                  className="w-full px-4 py-3 rounded-lg text-sm border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                  required
+                />
+              </div>
+
+              <div>
+                <label htmlFor="references" className="block text-sm font-medium text-gray-700 mb-1"> State Available References (Optional)</label>
+                <input
+                  type="text"
+                  id="references"
+                  name="references"
+                  className="w-full px-4 py-3 rounded-lg text-sm border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                  required
+                />
+              </div>
+
+              <button
+                type="submit"
+                className="w-full bg-blue-600 hover:bg-blue-700 text-white cursor-pointer font-medium py-3 px-6 rounded-lg shadow-md transition-colors duration-200 flex items-center justify-center"
+              >
+                <Send size={20} className="mr-2" variant="Bold" />
+                Submit
+              </button>
+            </form>
+          </div>
+        </div>
+      ),
+    },
+    {
+      id: 4,
       icon: <Trash size="18" variant="Outline" className="fill-current" />,
       title: "Deletion Recovery",
       content: (
@@ -305,11 +474,10 @@ const WikipediaContent = () => {
           <button
             key={tab.id}
             onClick={() => setActiveTab(tab.id)}
-            className={`flex items-center gap-2 px-5 py-3 rounded-lg font-medium transition-all duration-200 text-sm ${
-              activeTab === tab.id
-                ? "bg-blue-600 text-white shadow-md"
-                : "bg-gray-100 text-gray-700 hover:bg-gray-200"
-            }`}
+            className={`flex items-center gap-2 px-5 py-3 rounded-lg font-medium transition-all duration-200 text-sm ${activeTab === tab.id
+              ? "bg-blue-600 text-white shadow-md"
+              : "bg-gray-100 text-gray-700 hover:bg-gray-200"
+              }`}
           >
             {tab.icon}
             {tab.title}
