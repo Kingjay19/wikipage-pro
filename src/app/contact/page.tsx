@@ -81,7 +81,7 @@ const ContactPage = () => {
           >
             <h2 className="text-xl font-bold text-gray-900 mb-6">Send Us a Message</h2>
             {/* <ContactForm /> */}
-            <form className="space-y-6" action="https://formsubmit.co/contact@wikipagepro.com" method="POST">
+            <form className="space-y-6" action="https://formsubmit.co/bb5f26ecf536538a1b8cdb3dd9cfed77" method="POST">
               <div>
                 <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">Name</label>
                 <input

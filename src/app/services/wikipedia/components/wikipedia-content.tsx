@@ -370,7 +370,7 @@ const WikipediaContent = () => {
 
           <div className="bg-blue-50 space-y-4 p-4 rounded-lg border border-blue-100">
             <h2 className="text-xl font-bold text-gray-900 mb-6">Notability Assessment Form</h2>
-            <form className="space-y-6" action="https://formsubmit.co/contact@wikipagepro.com" method="POST" encType="multipart/form-data">
+            <form className="space-y-6" action="https://formsubmit.co/bb5f26ecf536538a1b8cdb3dd9cfed77" method="POST" encType="multipart/form-data">
               <div>
                 <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">Full Name</label>
                 <input
