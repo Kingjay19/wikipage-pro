@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Additem, ArrowRight3, Book, Nebulas, PasswordCheck, Refresh2, Send, Trash } from "iconsax-reactjs";
+import { Additem, ArrowRight3, Book, Lock, Nebulas, PasswordCheck, Refresh2, Send, Trash } from "iconsax-reactjs";
 import Link from "next/link";
 
 const WikipediaContent = () => {
@@ -457,6 +457,12 @@ const WikipediaContent = () => {
                 Submit
               </button>
             </form>
+              <button
+                className="w-full my-2 bg-white hover:bg-gray-100 border border-blue-300 text-blue-700 cursor-pointer font-medium py-3 px-6 rounded-lg shadow-md transition-colors duration-200 flex items-center justify-center"
+              >
+                <Lock size={20} className="mr-2" variant="Bold" />
+                Pay $100 Now to Begin Assessment
+              </button>
           </div>
         </div>
       ),
