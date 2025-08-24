@@ -18,9 +18,9 @@ export default function AboutusDetails() {
           />
           <p>
             <span className="text-blue-800 font-semibold">
-              Wikipedia Excellence:
+              Wiki Excellence:
             </span>{" "}
-            Creating, optimizing, and maintaining Wikipedia pages for
+            Creating, optimizing, and maintaining Wiki pages for
             individuals, brands, and organizations.
           </p>
         </li>

@@ -104,7 +104,7 @@ const ContactForm = () => {
           <option value="web-dev">Website Development</option>
           <option value="web-revamp">Website Revamping</option>
           <option value="ui-ux">UI/UX Design</option>
-          <option value="wikipedia">Wikipedia Services</option>
+          <option value="wiki">Wiki Services</option>
           <option value="wordpress">WordPress Services</option>
           <option value="google-business">Google Business Listing</option>
           <option value="ecommerce">E-Commerce Solutions</option>

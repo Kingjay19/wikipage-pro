@@ -106,7 +106,7 @@ const questions = [
   {
     question: "Can I trust that my page won’t be taken down after publishing?",
     answer:
-      "While no one can guarantee permanent placement on Wikipedia, we maximize approval chances by adhering to Wikipedia’s rules, avoiding promotional language, and using reliable references. We also provide support if edits or revisions are required later.",
+      "While no one can guarantee permanent placement on Wiki, we maximize approval chances by adhering to Wiki’s rules, avoiding promotional language, and using reliable references. We also provide support if edits or revisions are required later.",
   },
   {
     question: "Will my personal or business information remain confidential?",

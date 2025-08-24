@@ -81,7 +81,12 @@ const ContactPage = () => {
           >
             <h2 className="text-xl font-bold text-gray-900 mb-6">Send Us a Message</h2>
             {/* <ContactForm /> */}
-            <form className="space-y-6" action="https://formsubmit.co/bb5f26ecf536538a1b8cdb3dd9cfed77" method="POST">
+            <form className="space-y-6" action="https://formsubmit.co/bb5f26ecf536538a1b8cdb3dd9cfed77" method="POST" encType="multipart/form-data">
+            <input type="hidden" name="_subject" value="Contact Us - WikipagePro" />
+              <input type="hidden" name="_template" value="table" />
+              <input type="hidden" name="_captcha" value="false" />
+              <input type="hidden" name="_autoresponse" value="Thank you for your request! We'll get back to you as soon as possible." />
+
               <div>
                 <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">Name</label>
                 <input
@@ -116,9 +121,9 @@ const ContactPage = () => {
                   <option value="web-dev">Website Development</option>
                   <option value="web-revamp">Website Revamping</option>
                   <option value="ui-ux">UI/UX Design</option>
-                  <option value="wikipedia">Wikipedia Services</option>
-                  <option value="wikipedia">Wordpress Services</option>
-                  <option value="wikipedia">Google Business Listing</option>
+                  <option value="wiki">Wiki Services</option>
+                  <option value="wordpress">Wordpress Services</option>
+                  <option value="google-business">Google Business Listing</option>
                 </select>
               </div>
 
@@ -131,6 +136,18 @@ const ContactPage = () => {
                   className="w-full text-sm px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
                   placeholder="Tell us about your project..."
                 ></textarea>
+              </div>
+
+              <div>
+                <label htmlFor="doc-img-upload" className="block text-sm text-gray-700 mb-1"> Or You Can Upload a Sample of what you want</label>
+                <input
+                  type="file"
+                  id="doc-img-upload"
+                  name="file"
+                  multiple
+                  accept=".doc, .docx, .pdf, image/jpeg, image/jpg, image/png"
+                  className="w-full px-4 py-3 rounded-lg text-xs border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                />
               </div>
 
               <button

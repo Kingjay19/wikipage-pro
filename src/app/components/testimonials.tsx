@@ -100,7 +100,7 @@ const testimonials = [
     avatar: "./avatars/avatar-1.jpg",
   },
   {
-    text: "Getting our company page approved on Wikipedia seemed impossible until we worked with them. They handled the strict notability guidelines flawlessly, and the page has significantly boosted our credibility.",
+    text: "Getting our company page approved on Wiki seemed impossible until we worked with them. They handled the strict notability guidelines flawlessly, and the page has significantly boosted our credibility.",
     name: "James Langley",
     title: " CEO of Tech Innovations Ltd.",
     avatar: "./avatars/avatar-2.jpg",

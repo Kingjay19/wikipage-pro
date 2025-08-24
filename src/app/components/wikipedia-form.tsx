@@ -31,7 +31,6 @@ const WikipediaForm = () => {
         setIsSuccess(true);
         e.currentTarget.reset();
         
-        // Reset success message after 5 seconds
         setTimeout(() => {
           setIsSuccess(false);
         }, 5000);
@@ -55,7 +54,7 @@ const WikipediaForm = () => {
 
       {isSuccess && (
         <div className="bg-green-50 border border-green-200 text-green-700 px-4 py-3 rounded-lg text-sm">
-          Thank you! Your Wikipedia request has been submitted. We'll review it within 24-48 hours.
+          Thank you! Your Wiki request has been submitted. We'll review it within 24-48 hours.
         </div>
       )}
 
@@ -105,7 +104,7 @@ const WikipediaForm = () => {
 
       <div>
         <label htmlFor="topic" className="block text-sm font-medium text-gray-700 mb-1">
-          Wikipedia Page Topic
+          Wiki Page Topic
         </label>
         <input
           type="text"
@@ -178,7 +177,7 @@ const WikipediaForm = () => {
         ) : (
           <>
             <Send size={20} className="mr-2" variant="Bold" />
-            Submit Wikipedia Request
+            Submit Wiki Request
           </>
         )}
       </button>

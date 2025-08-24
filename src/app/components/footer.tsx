@@ -71,7 +71,7 @@ export default function Footer() {
               className="py-1 flex items-center gap-2 hover:underline"
             >
               <Nebulas size="12" variant="Outline" className="fill-current" />
-              Wikipedia Services
+              Wiki Services
             </Link>
             <Link
               href="/services/website-development"

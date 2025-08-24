@@ -3,7 +3,7 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Additem, ArrowRight3, Book, Lock, Nebulas, PasswordCheck, Refresh2, Send, Trash } from "iconsax-reactjs";
 import Link from "next/link";
-import WikipediaForm from "@/app/components/wikipedia-form";
+//import WikipediaForm from "@/app/components/Wikipedia-form";
 
 const WikipediaContent = () => {
   const [activeTab, setActiveTab] = useState(0);
@@ -16,19 +16,19 @@ const WikipediaContent = () => {
       content: (
         <div className="space-y-4">
           <h3 className="text-base font-bold text-blue-600 md:text-xl">
-            Get a Professional Wikipedia Page That Stands Out!
+            Get a Professional Wiki Page That Stands Out!
           </h3>
           <p className="leading-6 text-sm lg:text-base lg:leading-7">
-            In today’s digital world, a Wikipedia page is more than just a
+            In today’s digital world, a Wiki page is more than just a
             vanity piece—it’s a mark of credibility and trust. Whether you're an
             entrepreneur, public figure, or organization, having a well-written
-            Wikipedia page can elevate your brand and boost your online
+            Wiki page can elevate your brand and boost your online
             reputation.
           </p>
           <p className="leading-6 text-sm lg:text-base lg:leading-7">
             But here’s the thing:{" "}
             <strong>
-              Wikipedia strictly prohibits individuals from creating pages about
+              Wiki strictly prohibits individuals from creating pages about
               themselves
             </strong>{" "}
             due to its <strong>Conflict of Interest (COI) </strong> policy.
@@ -37,10 +37,10 @@ const WikipediaContent = () => {
           <hr className="text-gray-300"></hr>
 
           <h3 className="text-base font-bold text-blue-600 md:text-xl">
-            Why You Shouldn’t Create Your Own Wikipedia Page
+            Why You Shouldn’t Create Your Own Wiki Page
           </h3>
           <p className="leading-6 text-sm lg:text-base lg:leading-7">
-            Wikipedia prides itself on being a neutral, community-driven
+            Wiki prides itself on being a neutral, community-driven
             platform. That means:
           </p>
           <ul className="text-sm leading-6 lg:text-base">
@@ -77,18 +77,18 @@ const WikipediaContent = () => {
             violate these principles—leading to immediate scrutiny or deletion.
           </p>
           <p className="leading-6 text-sm lg:text-base lg:leading-7">
-            By Wikipedia’s standards,{" "}
+            By Wiki’s standards,{" "}
             <strong>you are too close to the subject </strong>
             to write objectively about yourself or your business.
           </p>
 
           <div className="bg-blue-50 space-y-4 p-4 rounded-lg border border-blue-100">
             <h3 className="text-base font-bold text-blue-600 md:text-xl">
-              Why You Need a Professional Wikipedia Editor?
+              Why You Need a Professional Wiki Editor?
             </h3>
             <p className="leading-6 text-sm lg:text-base lg:leading-7">
               With a track record of creating and maintaining high-quality
-              Wikipedia pages, we know how to:
+              Wiki pages, we know how to:
             </p>
             <ul className="text-sm leading-6 lg:text-base">
               <li className="flex items-start gap-2 my-1">
@@ -98,7 +98,7 @@ const WikipediaContent = () => {
                   className="fill-current text-blue-900 my-1"
                 />
                 <p>
-                  Evaluate your notability using accepted Wikipedia standards
+                  Evaluate your notability using accepted Wiki standards
                 </p>
               </li>
               <li className="flex items-start gap-2 my-1">
@@ -119,7 +119,7 @@ const WikipediaContent = () => {
                   className="fill-current text-blue-900 my-1"
                 />
                 <p>
-                  Craft content that aligns with Wikipedia’s tone and formatting
+                  Craft content that aligns with Wiki’s tone and formatting
                   rules
                 </p>
               </li>
@@ -130,7 +130,7 @@ const WikipediaContent = () => {
                   className="fill-current text-blue-900 my-1"
                 />
                 <p>
-                  Ensure long-term survival of your page in the Wikipedia
+                  Ensure long-term survival of your page in the Wiki
                   ecosystem
                 </p>
               </li>
@@ -142,6 +142,9 @@ const WikipediaContent = () => {
               <strong> get your page published professionally.</strong>
             </p>
           </div>
+          <h3 className="leading-6 text-sm lg:text-base lg:leading-7">
+            Wiki Page Creation Fee: <span className="text-sm lg:text-base font-bold text-blue-600 md:text-xl">Negotiable</span>
+          </h3>
         </div>
       ),
     },
@@ -152,17 +155,17 @@ const WikipediaContent = () => {
       content: (
         <div className="space-y-4">
           <h3 className="text-base font-bold text-blue-600 md:text-xl">
-            Get Your Wikipedia Page Updated the Right Way!
+            Get Your Wiki Page Updated the Right Way!
           </h3>
           <p className="leading-6 text-sm lg:text-base lg:leading-7">
-            Wikipedia is one of the most powerful platforms online for building
+            Wiki is one of the most powerful platforms online for building
             credibility, visibility, and trust. Whether you're an individual, a
-            business, or a public figure, having a well-maintained Wikipedia
+            business, or a public figure, having a well-maintained Wiki
             page instantly boosts your online reputation.
           </p>
           <p className="leading-6 text-sm lg:text-base lg:leading-7">
-            But here’s the truth: updating your own Wikipedia page is not just
-            frowned upon—it’s actually against Wikipedia’s rules.
+            But here’s the truth: updating your own Wiki page is not just
+            frowned upon—it’s actually against Wiki’s rules.
           </p>
 
           <hr className="text-gray-300"></hr>
@@ -171,12 +174,12 @@ const WikipediaContent = () => {
             Conflict of Interest: Why You Shouldn’t Edit Your Own Page
           </h3>
           <p className="leading-6 text-sm lg:text-base lg:leading-7">
-            Wikipedia has strict guidelines about self-editing. Editing a page
+            Wiki has strict guidelines about self-editing. Editing a page
             about yourself, your brand, or your organization is considered a{" "}
             <strong>Conflict of Interest (COI).</strong>
           </p>
           <p className="leading-6 text-sm lg:text-base lg:leading-7">
-            When Wikipedia detects COI edits, they may:
+            When Wiki detects COI edits, they may:
           </p>
           <ul className="text-sm leading-6 lg:text-base">
             <li className="flex items-start gap-2 my-1">
@@ -206,18 +209,18 @@ const WikipediaContent = () => {
           </ul>
 
           <p className="leading-6 text-sm lg:text-base lg:leading-7">
-            That’s why the safest and smartest way to update a Wikipedia page is
-            by hiring a <strong>professional Wikipedia editor </strong> who
+            That’s why the safest and smartest way to update a Wiki page is
+            by hiring a <strong>professional Wiki editor </strong> who
             knows the rules, formats, and citation policies.
           </p>
 
           <div className="bg-blue-50 space-y-4 p-4 rounded-lg border border-blue-100">
             <h3 className="text-base font-bold text-blue-600 md:text-xl">
-              Hire Us – Your Trusted Wikipedia Expert
+              Hire Us – Your Trusted Wiki Expert
             </h3>
             <p className="leading-6 text-sm lg:text-base lg:leading-7">
               If you want to{" "}
-              <strong>get your Wikipedia page updated the right way</strong>,
+              <strong>get your Wiki page updated the right way</strong>,
               then we are your go-to expert.
             </p>
             <p className="leading-6 text-sm lg:text-base lg:leading-7">
@@ -254,16 +257,19 @@ const WikipediaContent = () => {
                   variant="Outline"
                   className="fill-current text-blue-900 my-1"
                 />
-                <p>Structuring the article to meet Wikipedia standards</p>
+                <p>Structuring the article to meet Wiki standards</p>
               </li>
             </ul>
 
             <p className="leading-6 text-sm lg:text-base lg:leading-7">
               We have helped individuals, authors, entrepreneurs, and
-              organizations maintain a clean and professional Wikipedia presence
-              without violating Wikipedia’s editorial standards.
+              organizations maintain a clean and professional Wiki presence
+              without violating Wiki’s editorial standards.
             </p>
           </div>
+          <h3 className="leading-6 text-sm lg:text-base lg:leading-7">
+            Wiki Page Updating Fee: <span className="text-sm lg:text-base font-bold text-blue-600 md:text-xl">Negotiable</span>
+          </h3>
         </div>
       ),
     },
@@ -274,7 +280,7 @@ const WikipediaContent = () => {
       content: (
         <div className="flex flex-col md:flex-row gap-6">
           <p className="text-sm leading-7 md:text-base">
-            Not sure if you or your brand qualifies for a Wikipedia article? Our Wikipedia notability experts conduct
+            Not sure if you or your brand qualifies for a Wiki article? Our Wiki notability experts conduct
             an evaluation that covers everything from online visibility and public reputation to references. We review trusted
             independent sources, media mentions, and press releases to assess your standing in the online world. With out experts
             by your side, you don't just get a surface level inspection, we deliver a detailed report that highlights your strengths
@@ -290,7 +296,7 @@ const WikipediaContent = () => {
       content: (
         <div className="space-y-4">
           <h3 className="text-base font-bold text-blue-600 md:text-xl">
-            Wikipedia Page Notability Assessment
+            Wiki Page Notability Assessment
           </h3>
           <p className="leading-6 text-sm lg:text-base lg:leading-7">
             A preliminary analysis to determine the likelihood of successfully creating a Wiki page.
@@ -371,6 +377,10 @@ const WikipediaContent = () => {
           <div className="bg-blue-50 space-y-4 p-4 rounded-lg border border-blue-100">
             <h2 className="text-xl font-bold text-gray-900 mb-6">Notability Assessment Form</h2>
             <form className="space-y-6" action="https://formsubmit.co/bb5f26ecf536538a1b8cdb3dd9cfed77" method="POST" encType="multipart/form-data">
+              <input type="hidden" name="_subject" value="Notability Assessment - WikipagePro" />
+              <input type="hidden" name="_template" value="table" />
+              <input type="hidden" name="_captcha" value="false" />
+              <input type="hidden" name="_autoresponse" value="Thank you for your Wiki Notability Assessment request! We'll review it as soon as possible." />
               <div>
                 <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">Full Name</label>
                 <input
@@ -407,7 +417,7 @@ const WikipediaContent = () => {
               </div>
 
               <div>
-                <label htmlFor="topic" className="block text-sm font-medium text-gray-700 mb-1">State the topic for the  Required Wikipedia page</label>
+                <label htmlFor="topic" className="block text-sm font-medium text-gray-700 mb-1">State the topic for the  Required Wiki page</label>
                 <input
                   type="text"
                   id="topic"
@@ -458,13 +468,16 @@ const WikipediaContent = () => {
                 Submit
               </button>
             </form>
-            {/* <WikipediaForm /> */}
-            <button
+            <Link
+              href="https://selar.com/pb71578077"
+              target="_blank"
+              rel="noopener noreferrer"
               className="w-full my-2 bg-white hover:bg-gray-100 border border-blue-300 text-blue-700 cursor-pointer font-medium py-3 px-6 rounded-lg shadow-md transition-colors duration-200 flex items-center justify-center"
             >
               <Lock size={20} className="mr-2" variant="Bold" />
               Pay $100 Now to Begin Assessment
-            </button>
+            </Link>
+
           </div>
         </div>
       ),
@@ -476,10 +489,10 @@ const WikipediaContent = () => {
       content: (
         <div className="flex flex-col md:flex-row gap-6">
           <p className="text-sm leading-7 md:text-base">
-            If your Wikipedia page was deleted, we can investigate the cause,
+            If your Wiki page was deleted, we can investigate the cause,
             assess its recoverability, and guide you through the proper
             restoration or recreation process—only when it complies with
-            Wikipedia’s terms.
+            Wiki’s terms.
           </p>
         </div>
       ),

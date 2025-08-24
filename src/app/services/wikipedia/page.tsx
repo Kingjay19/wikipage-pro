@@ -7,11 +7,11 @@ export default function Wikipedia() {
   return (
     <div>
       <div>
-        <SubHeading subheader="Wikipedia Services" />
+        <SubHeading subheader="Wiki Services" />
         <ServiceDescription
-          description="At WikiPage Pro, we provide a full range of professional Wikipedia
+          description="At WikiPage Pro, we provide a full range of professional Wiki
             services tailored to your personal or business needs. Each service is
-            delivered with strict compliance to Wikipedia’s guidelines for quality,
+            delivered with strict compliance to Wiki’s guidelines for quality,
             neutrality, and notability."
         />
       </div>
