@@ -57,7 +57,7 @@ const services = [
   {
     link: "/services/wikipedia",
     image: "/images/wikipedia.png",
-    title: "WikiServices",
+    title: "Wiki Services",
     description:
       "Expertly crafted, compliant Wiki pages to establish your brand’s credibility and visibility with neutral, well-sourced content",
   },
