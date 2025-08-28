@@ -15,8 +15,32 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "WikiPage Pro",
-  description: "Your Go to for Wikipedia Pages",
+  title: {
+    default: "Wiki Page Pro",
+    template: "%s | WikiPage Pro",
+  },
+  description: "Your go-to location for Wiki Services and othe ronline services.",
+  metadataBase: new URL("https://wikipagepro.com"),
+  openGraph: {
+    title: "Wiki Page Pro",
+    description: "Your go-to location for Wiki Services and othe ronline services.",
+    url: "https://wikipagepro.com",
+    siteName: "Wiki Page Pro",
+    images: [
+      {
+        url: "/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Wiki Page Pro Banner",
+      },
+    ],
+    locale: "en_NG",
+    type: "website",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function RootLayout({
@@ -31,9 +55,9 @@ export default function RootLayout({
       >
         <Navigation />
         <main className="mx-2 my-12 md:mx-12 lg:mx-18">
-        {children}
+          {children}
         </main>
-        <Footer/>
+        <Footer />
       </body>
     </html>
   );

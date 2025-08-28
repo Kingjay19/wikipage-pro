@@ -4,6 +4,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import GetInTouch from '@/app/components/get-in-touch';
 import { Nebulas } from 'iconsax-reactjs';
 import SubHeading from '@/app/components/sub-heading';
+import Head from 'next/head';
 
 const UIDesignPage = () => {
     const [activeTab, setActiveTab] = useState(0);
@@ -279,33 +280,42 @@ const UIDesignPage = () => {
 
     return (
         <>
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <Head>
+                <title>UI/UX Design Services | Wiki Page Pro</title>
+                <meta
+                    name="UI/UX Design"
+                    content="At Wikipage Pro, we create intuitive, beautiful digital experiences that users love and businesses benefit from."
+                />
+                <link rel="canonical" href="https://wikipagepro.com" />
+            </Head>
+
+            <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
                 {/* Hero Section */}
-                <div className="text-center mb-16">
-                    <SubHeading subheader='UI/UX Design Services'/>
+                <section className="text-center mb-16">
+                    <SubHeading subheader='UI/UX Design Services' />
                     <p className="text-base text-gray-600 max-w-3xl mx-auto">
                         We create intuitive, beautiful digital experiences that users love and businesses benefit from.
                     </p>
-                </div>
+                </section>
 
                 {/* Service Tabs */}
-                <div className="flex flex-wrap justify-center gap-2 mb-12">
+                <section className="flex flex-wrap justify-center gap-2 mb-12">
                     {tabs.map((tab) => (
                         <button
                             key={tab.id}
                             onClick={() => setActiveTab(tab.id)}
                             className={`m-1 px-6 py-3 rounded-lg font-medium text-base transition-all duration-200 ${activeTab === tab.id
-                                    ? 'bg-blue-600 text-white shadow-lg'
-                                    : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
+                                ? 'bg-blue-600 text-white shadow-lg'
+                                : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
                                 }`}
                         >
                             {tab.title}
                         </button>
                     ))}
-                </div>
+                </section>
 
                 {/* Content Area */}
-                <div className="min-h-[500px]">
+                <section className="min-h-[500px]">
                     <AnimatePresence mode="wait">
                         <motion.div
                             key={activeTab}
@@ -318,12 +328,12 @@ const UIDesignPage = () => {
                             {tabs.find(tab => tab.id === activeTab)?.content}
                         </motion.div>
                     </AnimatePresence>
-                </div>
+                </section>
 
-                <div className="mt-16">
+                <section className="mt-16">
                     <GetInTouch />
-                </div>
-            </div>
+                </section>
+            </main>
         </>
     );
 };

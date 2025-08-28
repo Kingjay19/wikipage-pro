@@ -4,6 +4,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import SubHeading from '@/app/components/sub-heading';
 import GetInTouch from '@/app/components/get-in-touch';
 import { Nebulas } from 'iconsax-reactjs';
+import Head from 'next/head';
 
 const WebsiteDevelopment = () => {
     const [activeTab, setActiveTab] = useState(0);
@@ -442,17 +443,26 @@ const WebsiteDevelopment = () => {
 
     return (
         <>
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <Head>
+                <title>Website Development Services | Wiki Page Pro</title>
+                <meta
+                    name="Website Development"
+                    content="At Wikipage Pro, we build high-performance websites that drive business growth, with an emphasis on speed, usability, and conversions."
+                />
+                <link rel="canonical" href="https://wikipagepro.com" />
+            </Head>
+
+            <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
                 {/* Hero Section */}
-                <div className="text-center mb-16">
+                <section className="text-center mb-16">
                     <SubHeading subheader='Website Development Services' />
                     <p className="text-gray-600 max-w-3xl mx-auto text-lg">
                         We build high-performance websites that drive business growth, with an emphasis on speed, usability, and conversions.
                     </p>
-                </div>
+                </section>
 
                 {/* Service Tabs */}
-                <div className="flex flex-wrap justify-center gap-2 mb-12">
+                <section className="flex flex-wrap justify-center gap-2 mb-12">
                     {tabs.map((tab) => (
                         <button
                             key={tab.id}
@@ -465,10 +475,10 @@ const WebsiteDevelopment = () => {
                             {tab.title}
                         </button>
                     ))}
-                </div>
+                </section>
 
                 {/* Content Area */}
-                <div className="min-h-[500px]">
+                <section className="min-h-[500px]">
                     <AnimatePresence mode="wait">
                         <motion.div
                             key={activeTab}
@@ -481,13 +491,13 @@ const WebsiteDevelopment = () => {
                             {tabs.find(tab => tab.id === activeTab)?.content}
                         </motion.div>
                     </AnimatePresence>
-                </div>
+                </section>
 
 
-                <div className="mt-16">
+                <section className="mt-16">
                     <GetInTouch />
-                </div>
-            </div>
+                </section>
+            </main>
         </>
     );
 };

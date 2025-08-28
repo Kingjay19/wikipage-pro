@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 export default function Footer() {
   return (
-    <div className="mt-12 bg-blue-800 text-white px-6 py-18 text-sm md:px-24">
+    <footer className="mt-12 bg-blue-800 text-white px-6 py-18 text-sm md:px-24">
       <motion.div
         initial={{ y: 50, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
@@ -114,6 +114,6 @@ export default function Footer() {
       <p className="text-center mt-6 md:mt-10">
         © 2025 WikiPage Pro All rights reserved
       </p>
-    </div>
+    </footer>
   );
 }

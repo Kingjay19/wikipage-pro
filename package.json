@@ -6,9 +6,11 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "postbuild": "next-sitemap"
   },
   "dependencies": {
+    "@next/bundle-analyzer": "^15.5.2",
     "formidable": "^3.5.4",
     "iconsax-reactjs": "^0.0.8",
     "motion": "^12.23.12",

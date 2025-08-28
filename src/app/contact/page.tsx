@@ -2,12 +2,21 @@
 import { motion } from 'framer-motion';
 import { Send } from 'iconsax-reactjs';
 import Image from 'next/image';
-import ContactForm from '../components/contact-form';
+import Head from 'next/head';
 
 const ContactPage = () => {
   return (
     <>
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+    <Head>
+        <title>Contact Us | Wiki Page Pro</title>
+        <meta
+          name="Contact Us"
+          content="Contact Us for your Wiki and Digital services."
+        />
+        <link rel="canonical" href="https://wikipagepro.com" />
+      </Head>
+
+      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="text-center mb-16">
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
@@ -23,11 +32,11 @@ const ContactPage = () => {
             transition={{ duration: 0.5, delay: 0.1 }}
             className="text-base text-gray-600 max-w-3xl mx-auto md:text-lg"
           >
-            Reach out to us via Telegram for quick responses or email for detailed inquiries.
+            Reach out to us either via Telegram or Whatsapp for quick responses, or email for detailed inquiries.
           </motion.p>
         </div>
 
-        <div className="grid gap-6 md:grid-cols-2">
+        <section className="grid gap-6 md:grid-cols-2">
           {/* Contact Methods */}
           <motion.div
             initial={{ opacity: 0, x: -20 }}
@@ -44,7 +53,7 @@ const ContactPage = () => {
                   className="flex items-center p-4 mb-4 rounded-lg bg-blue-50 border border-blue-100 cursor-pointer hover:bg-blue-100 transition-colors duration-200"
                 >
                   <div className="bg-blue-100 rounded-full mr-4">
-                    <Image src="/icons/telegram-icon.png" alt='image-icon' width={36} height={36} />
+                    <Image src="/icons/telegram-icon.png" alt='telegram-icon' width={36} height={36} />
                   </div>
                   <div>
                     <h3 className="font-bold text-gray-900">Telegram</h3>
@@ -59,12 +68,27 @@ const ContactPage = () => {
                   className="flex items-center p-4 mb-4 rounded-lg bg-red-50 border border-red-100 cursor-pointer hover:bg-red-100 transition-colors duration-200"
                 >
                   <div className="bg-gray-100 p-3 rounded-full mr-4">
-                    <Image src="/icons/email-icon.png" alt='image-icon' width={24} height={24} className='size-6' />
+                    <Image src="/icons/email-icon.png" alt='email-icon' width={24} height={24} className='size-6' />
                   </div>
                   <div>
                     <h3 className="font-bold text-gray-900">Email</h3>
                     <p className="text-sm text-gray-600">For detailed inquiries</p>
                     <p className="text-sm text-gray-600 mt-1">contact@wikipagepro.com</p>
+                  </div>
+                </div>
+
+                {/* Whatsapp Card */}
+                <div
+                  onClick={() => window.open('https://wa.me/+2349155723537', '_blank')}
+                  className="flex items-center p-4 mb-4 rounded-lg bg-green-50 border border-green-100 cursor-pointer hover:bg-green-100 transition-colors duration-200"
+                >
+                  <div className="bg-green-100 rounded-full mr-4">
+                    <Image src="/icons/whatsapp-icon.png" alt='whatsapp-icon' width={36} height={36} />
+                  </div>
+                  <div>
+                    <h3 className="font-bold text-gray-900">Whatsapp</h3>
+                    <p className="text-sm text-gray-600">For quick questions and chat</p>
+                    <p className="text-sm text-green-600 mt-1">Wiki Page Pro</p>
                   </div>
                 </div>
               </div>
@@ -159,8 +183,8 @@ const ContactPage = () => {
               </button>
             </form> 
           </motion.div>
-        </div>
-      </div>
+        </section>
+      </main>
     </>
   );
 };
