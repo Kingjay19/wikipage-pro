@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     default: "Wiki Page Pro",
     template: "%s | WikiPage Pro",
   },
-  description: "Your go-to location for Wiki Services and othe ronline services.",
+  description: "Your go-to location for Wiki Services and other online services.",
   metadataBase: new URL("https://wikipagepro.com"),
   openGraph: {
     title: "Wiki Page Pro",
