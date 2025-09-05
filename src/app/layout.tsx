@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://wikipagepro.com"),
   openGraph: {
     title: "Wiki Page Pro",
-    description: "Your go-to location for Wiki Services and othe ronline services.",
+    description: "Your go-to location for Wiki Services and other online services.",
     url: "https://wikipagepro.com",
     siteName: "Wiki Page Pro",
     images: [
