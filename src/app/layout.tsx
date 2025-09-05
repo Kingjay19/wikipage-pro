@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navigation from "./components/navigation";
 import Footer from "./components/footer";
+import WhatsAppChat from "./components/whatsapp-chat";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -57,6 +58,10 @@ export default function RootLayout({
         <main className="mx-2 my-12 md:mx-12 lg:mx-18">
           {children}
         </main>
+        <WhatsAppChat
+          phoneNumber="+2349155723537"
+          companyName="WikiPage Pro"
+        />
         <Footer />
       </body>
     </html>

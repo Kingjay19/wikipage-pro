@@ -179,7 +179,7 @@ const ContactPage = () => {
                 className="w-full bg-blue-600 hover:bg-blue-700 cursor-pointer text-white font-medium py-3 px-6 rounded-lg shadow-md transition-colors duration-200 flex items-center justify-center"
               >
                 <Send size={20} className="mr-2" variant="Bold" />
-                Send Message
+                Upload Product Details
               </button>
             </form> 
           </motion.div>
